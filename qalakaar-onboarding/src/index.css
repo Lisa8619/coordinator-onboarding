@@ -1,0 +1,56 @@
+/* 
+  Correctly import Tailwind's base styles, components, and utilities.
+  This is the standard and required way to enable Tailwind in your project.
+*/
+@import "tailwindcss";
+
+
+/* 
+  Define global CSS variables and base styles here.
+  These are foundational styles that Tailwind will build upon.
+*/
+:root {
+  /* 
+    Brand color variable for consistency. You can use this in your tailwind.config.js.
+  */
+  --color-brand: #D72D18;
+  
+  /* These were the valid comments from your original file, now correctly formatted */
+  /* --color-brand-600: #B22215;  Example darker red for hover */
+  /* --color-ink: #1C1C1C;         primary text black-ish */
+  /* --color-ink-2: #2C2C2C;       secondary text */
+  /* --color-paper: #FFFFFF;      white */
+  /* --color-paper-2: #F5F5F5;      light surface */
+
+  /* Base font settings for the entire application */
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Optimizations for font rendering */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 
+  Set a default background and text color for the body.
+  The React component uses 'bg-white', but this provides a global fallback.
+  All other body styles from the original file were removed as they are better
+  handled by Tailwind utility classes.
+*/
+body {
+  margin: 0;
+  padding: 0;
+  background: none;
+  color: #1C1C1C;         /* Default text color */
+}
+
+/*
+  All other rules for h1, button, a, .app-container, and media queries 
+  have been removed. Those styles should be applied directly in your 
+  React components using Tailwind's utility classes for a consistent and 
+  maintainable design system.
+*/
+
